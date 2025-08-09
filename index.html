@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tool AI Baccarat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Tool AI Baccarat</h1>
+    <div id="buttons">
+        <button class="player" onclick="addResult('P')">Player</button>
+        <button class="banker" onclick="addResult('B')">Banker</button>
+        <button class="tie" onclick="addResult('T')">Tie</button>
+    </div>
+    <p id="prediction">Chưa có dự đoán</p>
+    <canvas id="historyChart"></canvas>
+    <button onclick="resetResults()">Reset</button>
+</body>
+</html>
